@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{%  block content %}
+
+<h1>Database Results</h1>
+{% for item in results %}
+<h3>ID: {{item.id}}, Name: {{item.name}}, Location: {{item.location}}</h3>
+{% endfor %}
+
+{% endblock %}
